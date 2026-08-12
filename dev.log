@@ -1,0 +1,147 @@
+
+> movade@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1365ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3.4s (1680 modules)
+ GET / 200 in 5779ms
+ ✓ Compiled in 2.4s (811 modules)
+ GET / 200 in 415ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1797ms (865 modules)
+ GET /favicon.ico 200 in 2239ms
+ GET / 200 in 4207ms
+ ✓ Compiled in 235ms (1676 modules)
+ GET / 200 in 8906ms
+ GET /favicon.ico 200 in 10ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 883ms (1633 modules)
+ GET / 404 in 1241ms
+ GET /_next/static/css/app/layout.css?v=1786533906431 404 in 63ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 63ms
+ GET /_next/static/chunks/main-app.js?v=1786533906431 404 in 63ms
+ GET /_next/static/chunks/app/layout.js 404 in 62ms
+ ✓ Compiled /favicon.ico in 209ms (866 modules)
+ GET /favicon.ico 200 in 322ms
+ GET / 200 in 4333ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 4.1s (1891 modules)
+ GET /_next/static/css/app/layout.css?v=1786533921165 404 in 4504ms
+ GET /_next/static/css/app/page.css?v=1786533921165 404 in 4504ms
+ GET /_next/static/chunks/main-app.js?v=1786533921165 404 in 4495ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 4491ms
+ GET /_next/static/chunks/app/page.js 404 in 4634ms
+ GET /_next/static/chunks/app/layout.js 404 in 4647ms
+ GET /favicon.ico 200 in 9ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'D:\travel agency\.next\server\pages'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/pages/_error' in D:\travel agency\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'D:\travel agency\.next\server\pages\_error.js', but to 'Error: Can't resolve '../../../../.next/server/pages/_error' in 'D:\travel agency\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/pages/_error (expected D:\travel agency\.next\server\pages\_error.js)
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\server\require.js
+<w>  at file D:\travel agency\node_modules\next\dist\server\require.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\server\load-components.js
+<w>  at file D:\travel agency\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\build\utils.js
+<w>  at file D:\travel agency\node_modules\next\dist\build\utils.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/_not-found/page' in D:\travel agency\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'D:\travel agency\.next\server\app\_not-found\page.js', but to 'Error: Can't resolve '../../../../.next/server/app/_not-found/page' in 'D:\travel agency\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/_not-found/page (expected D:\travel agency\.next\server\app\_not-found\page.js)
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\server\require.js
+<w>  at file D:\travel agency\node_modules\next\dist\server\require.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\server\load-components.js
+<w>  at file D:\travel agency\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\build\utils.js
+<w>  at file D:\travel agency\node_modules\next\dist\build\utils.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ✓ Compiled in 2.6s (1868 modules)
+ ✓ Compiled in 1427ms (1868 modules)
+ ✓ Compiled in 517ms (1868 modules)
+ ⨯ ./components/explore-escape.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+     ,-[[36;1;4mD:\travel agency\components\explore-escape.tsx[0m:113:1]
+ [2m113[0m |   };
+ [2m114[0m | 
+ [2m115[0m |   return (
+ [2m116[0m |     <section id="explore-escape" className="relative z-10 overflow-hidden rounded-t-[32px] bg-white px-4 py-16 shadow-[0_-30px_60px_rgba(0,0,0,0.15)] md:px-10 md:py-24">
+     : [31;1m     ^^^^^^^[0m
+ [2m117[0m |       <div className="mx-auto max-w-7xl">
+ [2m118[0m |         <div className="mb-10 flex items-start justify-between md:mb-14">
+ [2m119[0m |           <Reveal>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/explore-escape.tsx
+./app/page.tsx
+ ✓ Compiled in 195ms (1868 modules)
+ ✓ Compiled in 191ms (1868 modules)
+ ✓ Compiled in 187ms (1868 modules)
+ ✓ Compiled in 269ms (1868 modules)
+ ✓ Compiled in 312ms (1868 modules)
+ ✓ Compiled in 207ms (1868 modules)
+ ⨯ ./components/lets-drive.tsx
+Error: 
+  [31mx[0m Unexpected token `section`. Expected jsx identifier
+    ,-[[36;1;4mD:\travel agency\components\lets-drive.tsx[0m:71:1]
+ [2m71[0m |   };
+ [2m72[0m | 
+ [2m73[0m |   return (
+ [2m74[0m |     <section ref={sectionRef} id="lets-drive" className="mx-auto max-w-7xl px-4 pb-16 md:px-10 md:pb-24">
+    : [31;1m     ^^^^^^^[0m
+ [2m75[0m |       <div className="rounded-4xl bg-white py-6 md:py-8">
+ [2m76[0m |         <div className="mb-8 flex items-center justify-between md:mb-10">
+ [2m77[0m |           <Reveal>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/lets-drive.tsx
+./app/page.tsx
+ ✓ Compiled in 1662ms (1868 modules)
+ ✓ Compiled in 1104ms (1868 modules)
+ ✓ Compiled in 1342ms (1868 modules)
+ ✓ Compiled in 1221ms (1868 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1054ms (1857 modules)
+ ✓ Compiled /_error in 450ms (1859 modules)
+ GET / 404 in 27ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'D:\travel agency\.next\server\app\favicon.ico'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/favicon.ico/route' in D:\travel agency\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'D:\travel agency\.next\server\app\favicon.ico\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/favicon.ico/route' in 'D:\travel agency\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/favicon.ico/route (expected D:\travel agency\.next\server\app\favicon.ico\route.js)
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\server\require.js
+<w>  at file D:\travel agency\node_modules\next\dist\server\require.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\server\load-components.js
+<w>  at file D:\travel agency\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\build\utils.js
+<w>  at file D:\travel agency\node_modules\next\dist\build\utils.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ✓ Compiled in 318ms (1868 modules)
+ ✓ Compiled in 287ms (1868 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'D:\travel agency\.next\server\app\favicon.ico'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/favicon.ico/route' in D:\travel agency\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'D:\travel agency\.next\server\app\favicon.ico\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/favicon.ico/route' in 'D:\travel agency\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/favicon.ico/route (expected D:\travel agency\.next\server\app\favicon.ico\route.js)
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\server\require.js
+<w>  at file D:\travel agency\node_modules\next\dist\server\require.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\server\load-components.js
+<w>  at file D:\travel agency\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\build\utils.js
+<w>  at file D:\travel agency\node_modules\next\dist\build\utils.js
+<w>  at file dependencies D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs D:\travel agency\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ○ Compiling /_not-found ...
