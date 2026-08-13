@@ -83,7 +83,7 @@ export default function AdventuresGallery() {
   };
 
   return (
-    <section id="adventures" className="mx-auto max-w-7xl px-4 py-12 md:px-10 md:py-16">
+    <section id="adventures" className="mx-auto max-w-7xl px-4 py-10 sm:py-12 md:px-10 md:py-16">
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-12">
         {/* Left block */}
         <div>
@@ -112,7 +112,7 @@ export default function AdventuresGallery() {
             </MagneticButton>
           </div>
 
-          <div className="grid grid-cols-3 gap-3 md:gap-6">
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-6">
             {BLOG_CARDS.map((card, i) => (
               <div
                 key={i}

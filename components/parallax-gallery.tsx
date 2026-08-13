@@ -73,7 +73,7 @@ export default function ParallaxGallery() {
 
   return (
     <section className="w-full bg-[#F4EFE9] text-text-primary">
-      <div className="flex h-[40vh] items-center justify-center md:h-[60vh]">
+      <div className="flex h-[30vh] items-center justify-center sm:h-[35vh] md:h-[60vh]">
         <div className="grid content-start justify-items-center gap-3 px-6 text-center md:gap-4">
           <h2 className="font-display text-2xl font-bold md:text-5xl">
             Moments Worth The Trip
@@ -113,8 +113,8 @@ export default function ParallaxGallery() {
         ))}
       </div>
 
-      <div className="flex h-[25vh] flex-col items-center justify-center gap-5 md:h-[40vh]">
-        <p className="font-display text-xl font-bold text-text-primary md:text-3xl">
+      <div className="flex h-[20vh] flex-col items-center justify-center gap-4 sm:h-[25vh] sm:gap-5 md:h-[40vh]">
+        <p className="font-display text-lg font-bold text-text-primary sm:text-xl md:text-3xl">
           Book your travel destination right away
         </p>
         <button

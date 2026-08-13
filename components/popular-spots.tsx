@@ -115,7 +115,7 @@ export default function PopularSpots() {
   };
 
   return (
-    <section id="popular-spots" className="relative mx-auto max-w-7xl px-4 py-16 md:px-10 md:py-24">
+    <section id="popular-spots" className="relative mx-auto max-w-7xl px-4 py-12 sm:py-16 md:px-10 md:py-24">
       <div className="mb-10 flex flex-col items-start justify-between gap-5 md:mb-14 md:flex-row md:items-end">
         <Reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-green/80" style={{ color: "#7FBF00" }}>
@@ -149,7 +149,7 @@ export default function PopularSpots() {
         </MagneticButton>
       </div>
 
-      <div className="grid grid-cols-1 gap-5 md:h-[600px] md:grid-cols-3 md:grid-rows-2 md:gap-6">
+      <div className="grid grid-cols-1 gap-4 sm:gap-5 md:h-[600px] md:grid-cols-3 md:grid-rows-2 md:gap-6">
         {SPOTS.map((spot, i) => {
           const isFeatured = spot.span.includes("row-span-2");
           return (
@@ -158,7 +158,7 @@ export default function PopularSpots() {
               ref={(el) => {
                 cardsRef.current[i] = el;
               }}
-              className={`relative aspect-[4/5] cursor-pointer md:aspect-auto md:h-full ${spot.span}`}
+              className={`relative aspect-[3/4] cursor-pointer sm:aspect-[4/5] md:aspect-auto md:h-full ${spot.span}`}
               onClick={() => handleSpotClick(spot)}
             >
               <TiltCard

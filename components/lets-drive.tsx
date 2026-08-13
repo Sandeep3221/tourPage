@@ -71,14 +71,14 @@ export default function LetsDrive() {
   };
 
   return (
-    <section ref={sectionRef} id="lets-drive" className="mx-auto max-w-7xl px-4 pb-16 md:px-10 md:pb-24">
-      <div className="relative overflow-hidden rounded-4xl border border-border-subtle bg-gradient-to-b from-[#FAFDF6] to-white py-8 md:py-12">
+    <section ref={sectionRef} id="lets-drive" className="mx-auto max-w-7xl px-4 pb-12 sm:pb-16 md:px-10 md:pb-24">
+      <div className="relative overflow-hidden rounded-3xl border border-border-subtle bg-gradient-to-b from-[#FAFDF6] to-white py-6 sm:py-8 sm:rounded-4xl md:py-12">
         <div
           aria-hidden
           className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-accent-green/20 blur-[100px]"
         />
 
-        <div className="relative mb-10 flex items-end justify-between px-6 md:mb-12 md:px-10">
+        <div className="relative mb-8 flex items-end justify-between px-4 sm:px-6 md:mb-12 md:px-10">
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-text-muted">
               How It Works
@@ -104,7 +104,7 @@ export default function LetsDrive() {
           </MagneticButton>
         </div>
 
-        <div className="relative grid grid-cols-1 gap-8 px-6 lg:grid-cols-2 lg:items-start lg:gap-10 lg:px-10">
+        <div className="relative grid grid-cols-1 gap-6 px-4 sm:px-6 lg:grid-cols-2 lg:items-start lg:gap-10 lg:px-10">
           <div ref={imageCardRef}>
             <TiltCard className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] md:rounded-[2rem]">
               <Image

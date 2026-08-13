@@ -113,9 +113,9 @@ export default function ExploreEscape() {
   };
 
   return (
-    <section id="explore-escape" className="relative z-10 overflow-hidden rounded-t-[32px] bg-white px-4 py-16 shadow-[0_-30px_60px_rgba(0,0,0,0.15)] md:px-10 md:py-24">
+    <section id="explore-escape" className="relative z-10 overflow-hidden rounded-t-[24px] bg-white px-4 py-12 shadow-[0_-30px_60px_rgba(0,0,0,0.15)] sm:rounded-t-[32px] sm:py-16 md:px-10 md:py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-10 flex items-start justify-between md:mb-14">
+        <div className="mb-8 flex items-start justify-between sm:mb-10 md:mb-14">
           <Reveal>
             <p
               className="text-xs font-semibold uppercase tracking-[0.2em]"
@@ -165,7 +165,7 @@ export default function ExploreEscape() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:h-[420px] md:grid-cols-3 md:grid-rows-2 md:gap-5">
+        <div className="grid grid-cols-1 gap-3 sm:gap-4 md:h-[420px] md:grid-cols-3 md:grid-rows-2 md:gap-5">
           {CARDS.map((card, cardIndex) => {
             if (card.variant === "framed") {
               return (

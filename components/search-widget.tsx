@@ -51,6 +51,9 @@ export default function SearchWidget({
   };
 
   useEffect(() => {
+    // If we have progressRef, the widget is controlled by the hero scroll event instead
+    if (progressRef) return;
+    
     const el = wrapRef.current;
     if (!el) return;
     const ctx = gsap.context(() => {
@@ -72,7 +75,7 @@ export default function SearchWidget({
       );
     }, wrapRef);
     return () => ctx.revert();
-  }, []);
+  }, [progressRef]);
 
   // Fade out search bar as hero scrolls
   useEffect(() => {
@@ -82,12 +85,12 @@ export default function SearchWidget({
 
     const onProgress = (e: Event) => {
       const progress = (e as CustomEvent<number>).detail;
-      // Stay fully visible for first 20% of scroll, then fade out by 35%
-      const opacity = 1 - Math.min(1, Math.max(0, (progress - 0.20) / 0.15));
-      const translateY = Math.max(0, (progress - 0.20)) * -50;
+      // Start hidden. Fade in between 80% and 100% of scroll progress
+      const opacity = Math.min(1, Math.max(0, (progress - 0.80) / 0.20));
+      const translateY = (1 - opacity) * 40; // Slide up slightly as it fades in
       el.style.opacity = String(opacity);
       el.style.transform = `translateY(${translateY}px)`;
-      el.style.pointerEvents = opacity < 0.1 ? "none" : "auto";
+      el.style.pointerEvents = opacity < 0.5 ? "none" : "auto";
     };
 
     window.addEventListener("hero-scroll-progress", onProgress);
@@ -113,19 +116,19 @@ export default function SearchWidget({
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{ rotateX, rotateY, transformPerspective: 1200 }}
-        className="glass w-full rounded-3xl border border-white/40 p-4 shadow-floating md:p-6"
+        className="glass w-full rounded-2xl border border-white/40 p-3 shadow-floating sm:rounded-3xl sm:p-4 md:p-6"
       >
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <h3 className="font-display text-lg font-bold md:text-2xl">
             Find the best place
           </h3>
-          <div className="flex flex-wrap items-center gap-1 rounded-full border border-border-subtle bg-white/60 p-1">
+          <div className="flex items-center gap-1 overflow-x-auto rounded-full border border-border-subtle bg-white/60 p-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {RESIDENCE_TABS.map((tab, i) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(i)}
                 className={clsx(
-                  "rounded-full px-3 py-1.5 text-xs font-medium transition-colors duration-300 md:px-4 md:py-2 md:text-sm",
+                  "whitespace-nowrap rounded-full px-3 py-1.5 text-[11px] font-medium transition-colors duration-300 sm:text-xs md:px-4 md:py-2 md:text-sm",
                   activeTab === i
                     ? "bg-text-primary text-white"
                     : "text-text-primary hover:text-text-muted"

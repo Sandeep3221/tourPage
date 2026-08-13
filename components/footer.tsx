@@ -102,7 +102,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="relative flex min-h-[500px] flex-col overflow-hidden bg-bg-dark px-4 pb-8 pt-16 text-text-primary md:px-10 md:pt-20"
+      className="relative flex min-h-[400px] flex-col overflow-hidden bg-bg-dark px-4 pb-6 pt-12 text-text-primary sm:min-h-[450px] sm:pb-8 sm:pt-16 md:min-h-[500px] md:px-10 md:pt-20"
     >
       <Image
         src="/footer.png"
@@ -113,7 +113,7 @@ export default function Footer() {
         aria-hidden
       />
       <div className="relative mx-auto flex w-full max-w-7xl flex-1 flex-col">
-        <div className="grid grid-cols-2 gap-8 border-b border-black/10 pb-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1.2fr] lg:gap-12 lg:pb-16">
+        <div className="grid grid-cols-2 gap-6 border-b border-black/10 pb-10 sm:gap-8 sm:pb-12 md:grid-cols-3 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1.2fr] lg:gap-12 lg:pb-16">
           {/* Brand */}
           <div className="col-span-2 sm:col-span-2 md:col-span-1 lg:col-span-1">
             <button

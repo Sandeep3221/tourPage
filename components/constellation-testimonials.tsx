@@ -124,7 +124,7 @@ export default function ConstellationTestimonials() {
   const active = TESTIMONIALS.find((t) => t.id === activeId)!;
 
   return (
-    <section className="relative overflow-hidden border-t border-border-subtle bg-bg-primary px-6 py-14 md:px-10 md:py-16">
+    <section className="relative overflow-hidden border-t border-border-subtle bg-bg-primary px-4 py-12 sm:px-6 sm:py-14 md:px-10 md:py-16">
       <div
         className="pointer-events-none absolute left-1/2 top-1/2 h-[900px] w-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-60"
         style={{
@@ -140,7 +140,7 @@ export default function ConstellationTestimonials() {
           <span className="text-accent-green">✦</span>
           Testimonials
         </span>
-        <h2 className="mt-5 font-display text-4xl font-bold text-text-primary md:text-5xl">
+        <h2 className="mt-5 font-display text-3xl font-bold text-text-primary sm:text-4xl md:text-5xl">
           Testimonials
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-text-muted md:text-base">
@@ -258,11 +258,11 @@ export default function ConstellationTestimonials() {
       </div>
 
       {/* Mobile fallback: simple horizontal carousel */}
-      <div className="mt-12 flex gap-4 overflow-x-auto pb-4 md:hidden [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-1 pb-4 sm:mt-12 md:hidden [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {TESTIMONIALS.map((t) => (
           <div
             key={t.id}
-            className="w-[260px] shrink-0 rounded-3xl border border-border-subtle bg-white p-5 shadow-floating"
+            className="w-[280px] shrink-0 snap-start rounded-3xl border border-border-subtle bg-white p-5 shadow-floating sm:w-[300px]"
           >
             <div className="flex items-center gap-3">
               <span className="relative block h-12 w-12 shrink-0 overflow-hidden rounded-full border-2 border-accent-green">

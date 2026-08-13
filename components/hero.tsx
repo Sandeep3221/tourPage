@@ -90,14 +90,14 @@ export default function Hero() {
       ref={sectionRef}
       className="sticky top-0 z-0 min-h-[100svh] bg-white p-2 md:p-5"
     >
-      <div className="relative flex h-[calc(100svh-1rem)] w-full flex-col items-center justify-center overflow-hidden rounded-[24px] bg-bg-dark pb-36 pt-20 md:h-[calc(100svh-2.5rem)] md:pb-20 md:rounded-[40px]">
+      <div className="relative flex h-[calc(100svh-1rem)] w-full flex-col items-center justify-center overflow-hidden rounded-[24px] bg-bg-dark pb-28 pt-16 sm:pb-32 md:h-[calc(100svh-2.5rem)] md:pb-20 md:pt-20 md:rounded-[40px]">
         <HeroScrollCanvas
           progressRef={progressRef}
           className="absolute inset-0 h-full w-full"
         />
         <div
           ref={contentRef}
-          className="relative z-10 flex -translate-y-10 flex-col items-center px-4 text-center [text-shadow:0_2px_16px_rgba(0,0,0,0.5)] md:-translate-y-16 md:px-6"
+          className="relative z-10 flex -translate-y-6 flex-col items-center px-4 text-center [text-shadow:0_2px_16px_rgba(0,0,0,0.5)] sm:-translate-y-10 md:-translate-y-16 md:px-6"
         >
           <div
             ref={badgeRef}
@@ -109,7 +109,7 @@ export default function Hero() {
 
           <h1
             ref={headingRef}
-            className="max-w-4xl font-display text-[2rem] font-bold leading-[0.95] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl"
+            className="max-w-4xl font-display text-[1.65rem] font-bold leading-[0.95] tracking-tight text-white xs:text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl"
           >
             <span className="block overflow-hidden pb-1">
               {headingLine1.split(" ").map((w, i) => (
@@ -137,7 +137,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-0 right-0 z-20 flex justify-center px-3 md:bottom-10 md:px-6">
+      <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center px-2 sm:bottom-6 sm:px-3 md:bottom-10 md:px-6">
         <SearchWidget progressRef={progressRef} />
       </div>
     </section>

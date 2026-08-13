@@ -100,7 +100,7 @@ export default function PopularDestinations() {
   };
 
   return (
-    <section id="popular-destinations" className="w-full pb-16 pt-20 md:pb-24 md:pt-32">
+    <section id="popular-destinations" className="w-full pb-12 pt-16 sm:pb-16 sm:pt-20 md:pb-24 md:pt-32">
       <div className="mb-8 flex items-end justify-between px-4 md:mb-10 md:px-10">
         <Reveal>
           <h2 className="font-display text-2xl font-bold md:text-4xl lg:text-5xl">
@@ -151,7 +151,7 @@ export default function PopularDestinations() {
             ref={(el) => {
               cardsRef.current[i] = el;
             }}
-            className="w-[72vw] shrink-0 snap-start sm:w-[55vw] md:w-[calc(25%-1.2rem)] cursor-pointer"
+            className="w-[68vw] shrink-0 snap-start sm:w-[55vw] md:w-[calc(25%-1.2rem)] cursor-pointer"
             onClick={() => handleDestinationClick(dest)}
           >
             <TiltCard className="group relative aspect-[3/4] w-full overflow-hidden rounded-2xl md:rounded-3xl">

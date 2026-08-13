@@ -143,7 +143,7 @@ export default function WhyChoose() {
   return (
     <section
       id="why-choose"
-      className="relative overflow-hidden bg-white px-6 py-24 md:px-10 md:py-32"
+      className="relative overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 md:py-32 md:px-10"
     >
       {/* Decorative background: soft accent glow + dot grid */}
       <div
@@ -206,7 +206,7 @@ export default function WhyChoose() {
             ))}
           </div>
 
-          <div className="relative mt-11 grid grid-cols-3 gap-6 pt-9">
+          <div className="relative mt-9 grid grid-cols-3 gap-3 pt-7 sm:gap-6 sm:pt-9 md:mt-11">
             <div
               aria-hidden
               className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-black/15 to-transparent"
