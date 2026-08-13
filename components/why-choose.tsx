@@ -223,7 +223,7 @@ export default function WhyChoose() {
                   ref={(el) => {
                     statRefs.current[i] = el;
                   }}
-                  className="font-display text-3xl font-bold tabular-nums text-text-primary md:text-4xl"
+                  className="font-display text-2xl font-bold tabular-nums text-text-primary sm:text-3xl md:text-4xl"
                 >
                   0{stat.suffix}
                 </p>

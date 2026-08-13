@@ -186,15 +186,8 @@ export default function ExploreEscape() {
                       {card.text}
                     </p>
                   </div>
-                  <div className="relative z-10 -mb-[18px] ml-0">
-                    <button
-                      onClick={() => handleCardClick(card)}
-                      aria-label={`Explore ${card.title}`}
-                    >
-                      <ArrowCircle tone="gold" />
-                    </button>
-                  </div>
-                  <TiltCard className="group relative mt-0 aspect-[4/3] overflow-hidden rounded-2xl md:aspect-auto md:flex-1 md:rounded-3xl">
+
+                  <TiltCard className="group relative mt-4 aspect-[4/3] overflow-hidden rounded-2xl md:aspect-auto md:flex-1 md:rounded-3xl">
                     <Image
                       src={card.image}
                       alt={card.title.replace("\n", " ")}
@@ -202,6 +195,18 @@ export default function ExploreEscape() {
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
+                    <div className="absolute inset-0 flex cursor-pointer flex-col justify-start p-4 md:p-6">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleCardClick(card);
+                        }}
+                        aria-label={`Explore ${card.title}`}
+                        className="mt-3 md:mt-4 self-start"
+                      >
+                        <ArrowCircle tone="white" />
+                      </button>
+                    </div>
                   </TiltCard>
                 </div>
               );

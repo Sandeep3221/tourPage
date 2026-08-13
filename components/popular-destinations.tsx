@@ -101,7 +101,7 @@ export default function PopularDestinations() {
 
   return (
     <section id="popular-destinations" className="w-full pb-12 pt-16 sm:pb-16 sm:pt-20 md:pb-24 md:pt-32">
-      <div className="mb-8 flex items-end justify-between px-4 md:mb-10 md:px-10">
+      <div className="mb-8 flex items-end justify-between px-6 sm:px-8 md:mb-10 md:px-10">
         <Reveal>
           <h2 className="font-display text-2xl font-bold md:text-4xl lg:text-5xl">
             Popular <span className="font-normal">destination</span>
@@ -143,7 +143,7 @@ export default function PopularDestinations() {
 
       <div
         ref={railRef}
-        className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 md:gap-6 md:px-10 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-4 sm:px-8 md:gap-6 md:px-10 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {DESTINATIONS.map((dest, i) => (
           <div

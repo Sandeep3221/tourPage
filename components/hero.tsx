@@ -112,15 +112,15 @@ export default function Hero() {
             className="max-w-4xl font-display text-[1.65rem] font-bold leading-[0.95] tracking-tight text-white xs:text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl"
           >
             <span className="block overflow-hidden pb-1">
-              {headingLine1.split(" ").map((w, i) => (
-                <span key={i} className="word mr-2 inline-block md:mr-3">
+              {headingLine1.split(" ").map((w, i, arr) => (
+                <span key={i} className={`word inline-block ${i !== arr.length - 1 ? 'mr-2 md:mr-3' : ''}`}>
                   {w}
                 </span>
               ))}
             </span>
             <span className="block overflow-hidden pb-1">
-              {headingLine2.split(" ").map((w, i) => (
-                <span key={i} className="word mr-2 inline-block md:mr-3">
+              {headingLine2.split(" ").map((w, i, arr) => (
+                <span key={i} className={`word inline-block ${i !== arr.length - 1 ? 'mr-2 md:mr-3' : ''}`}>
                   {w}
                 </span>
               ))}
