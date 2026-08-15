@@ -9,6 +9,7 @@ import AccordionItem from "@/components/ui/accordion-item";
 import TiltCard from "@/components/ui/tilt-card";
 import { useToast } from "@/components/ui/toast";
 
+
 const ACCORDION_ITEMS = [
   {
     title: "Consultation & Trip Planning",
