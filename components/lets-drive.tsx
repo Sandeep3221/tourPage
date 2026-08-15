@@ -15,6 +15,7 @@ const ACCORDION_ITEMS = [
     title: "Consultation & Trip Planning",
     body: "Begin your journey with a consultation where you share your travel preferences, budget, and interests, so we can shape a trip that actually fits you.",
   },
+  
   {
     title: "Customized Itinerary & Booking",
     body: "We build a day-by-day itinerary around your goals and handle every booking — flights, stays, and experiences — so nothing is left to chance.",
