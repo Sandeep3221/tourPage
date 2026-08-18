@@ -20,11 +20,12 @@ const ACCORDION_ITEMS = [
     title: "Customized Itinerary & Booking",
     body: "We build a day-by-day itinerary around your goals and handle every booking — flights, stays, and experiences — so nothing is left to chance.",
   },
-  
+
   {
     title: "Seamless Payment & Confirmation",
     body: "Once your itinerary is confirmed, we provide secure payment options. After payment, you'll receive all travel documents, confirmations, and any necessary travel tips to ensure your journey is smooth from the start.",
   },
+  
   {
     title: "Journey Assistance & Support",
     body: "From departure to return, our team stays reachable for any changes, questions, or on-the-ground support you need along the way.",
