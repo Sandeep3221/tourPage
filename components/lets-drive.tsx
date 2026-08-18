@@ -25,12 +25,13 @@ const ACCORDION_ITEMS = [
     title: "Seamless Payment & Confirmation",
     body: "Once your itinerary is confirmed, we provide secure payment options. After payment, you'll receive all travel documents, confirmations, and any necessary travel tips to ensure your journey is smooth from the start.",
   },
-  
+
   {
     title: "Journey Assistance & Support",
     body: "From departure to return, our team stays reachable for any changes, questions, or on-the-ground support you need along the way.",
   },
 ];
+
 
 export default function LetsDrive() {
   const sectionRef = useRef<HTMLElement>(null);
